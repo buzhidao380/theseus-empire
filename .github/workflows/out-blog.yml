@@ -15,7 +15,7 @@ jobs:
         env:
           VENICE_KEY: ${{ secrets.VENICE_API_KEY }}
         run: |
-        mkdir-p_posts
+        mkdir -p _posts
           curl -X POST https://api.venice.ai/api/v1/chat/completions \
             -H "Authorization: Bearer $VENICE_KEY" \
             -H "Content-Type: application/json" \
